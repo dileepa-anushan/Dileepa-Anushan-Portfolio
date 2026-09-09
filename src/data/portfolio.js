@@ -10,7 +10,8 @@ export const PORTFOLIO_DATA = {
     email: "dileepaanushanlk@gmail.com",
     linkedin: "https://lk.linkedin.com/in/dileepa-anushan-10a449368",
     github: "https://github.com/dileepa-anushan",
-    avatarUrl: "/IMG_0490.jpg", // Updated to your uploaded JPEG photo
+    avatarUrl: "/IMG_0490.jpg",
+    resumeUrl: "/Dileepa-Anushan-CV.pdf", // Downloadable CV link
     interests: [
       "Software Engineering",
       "Full-Stack Web Development",

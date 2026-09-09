@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Mail, Github, Code2, Terminal } from 'lucide-react';
+import { ArrowRight, Mail, Github, Download, Code2, Terminal } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../data/portfolio';
 
 export const Hero = () => {
@@ -58,10 +58,20 @@ export const Hero = () => {
                 <ArrowRight className="w-4 h-4" />
               </a>
 
+              {/* Download CV Secondary CTA */}
+              <a
+                href={personal.resumeUrl}
+                download="Dileepa-Anushan-CV.pdf"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 dark:bg-slate-900 light:bg-slate-200 hover:bg-slate-800 dark:hover:bg-slate-800 light:hover:bg-slate-300 text-slate-200 dark:text-slate-200 light:text-slate-800 font-medium text-sm border border-slate-800 dark:border-slate-800 light:border-slate-300 transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-slate-400"
+              >
+                <Download className="w-4 h-4 text-emerald-400" />
+                <span>Download CV</span>
+              </a>
+
               {/* Get In Touch CTA */}
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 dark:bg-slate-900 light:bg-slate-200 hover:bg-slate-800 dark:hover:bg-slate-800 light:hover:bg-slate-300 text-slate-200 dark:text-slate-200 light:text-slate-800 font-medium text-sm border border-slate-800 dark:border-slate-800 light:border-slate-300 transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-slate-400"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white text-sm font-medium border border-slate-800 transition-all duration-200"
               >
                 <Mail className="w-4 h-4 text-emerald-400" />
                 <span>Get In Touch</span>
